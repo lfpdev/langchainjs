@@ -324,7 +324,7 @@ export type LanguageModelLike = Runnable<
 /**
  * Base class for language models.
  */
-export abstract class BaseLanguageModel<
+export abstract class BaseLanguageModel< // LLM 和 ChatOpenAI 都继承自这里
     // eslint-disable-next-line @typescript-eslint/no-explicit-any
     RunOutput = any,
     CallOptions extends BaseLanguageModelCallOptions = BaseLanguageModelCallOptions

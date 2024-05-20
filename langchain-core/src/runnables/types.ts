@@ -26,7 +26,7 @@ export interface RunnableInterface<
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
   RunOutput = any,
   CallOptions extends RunnableConfig = RunnableConfig
-> extends SerializableInterface {
+> extends SerializableInterface { // 抽象接口方法
   lc_serializable: boolean;
 
   invoke(input: RunInput, options?: Partial<CallOptions>): Promise<RunOutput>;

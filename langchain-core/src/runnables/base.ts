@@ -89,7 +89,7 @@ export function _coerceToDict(value: any, defaultKey: string) {
 
 /**
  * A Runnable is a generic unit of work that can be invoked, batched, streamed, and/or
- * transformed.
+ * transformed. 一个通用的工作单元，它可以被调用、批处理、流式处理和/或转换
  */
 export abstract class Runnable<
     // eslint-disable-next-line @typescript-eslint/no-explicit-any
