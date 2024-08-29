@@ -23,7 +23,6 @@ module.exports = {
     "*.d.ts",
   ],
   rules: {
-    "no-process-env": 2,
     "no-instanceof/no-instanceof": 2,
     "@typescript-eslint/explicit-module-boundary-types": 0,
     "@typescript-eslint/no-empty-function": 0,
@@ -64,4 +63,12 @@ module.exports = {
     "new-cap": ["error", { properties: false, capIsNew: false }],
     "arrow-body-style": 0,
   },
+  overrides: [
+    {
+      files: ['**/*.test.ts'],
+      rules: {
+        '@typescript-eslint/no-unused-vars': 'off'
+      }
+    }
+  ]
 };
